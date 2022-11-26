@@ -1,0 +1,21 @@
+<form [formGroup]="editMarkerForm">
+  <mat-form-field>
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Título" formControlName="title" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Leave a comment</mat-label>
+    <textarea
+      rows="3"
+      matInput
+      placeholder="Descripción"
+      formControlName="description"
+    ></textarea>
+  </mat-form-field>
+
+  <div>
+    <button type="submit" mat-button (click)="guardar()">Guardar</button>
+    <button type="button" mat-button (click)="cerrarModal()">Cancelar</button>
+  </div>
+</form>
